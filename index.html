@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ghemerson John Nacua | Himmel's Legacy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#4e453a",
+                    "on-primary-fixed-variant": "#234a68",
+                    "on-secondary-fixed-variant": "#284a61",
+                    "on-secondary-fixed": "#001e2e",
+                    "tertiary": "#675d50",
+                    "tertiary-fixed": "#eee0d0",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#a5caef",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#f1fbff",
+                    "primary": "#3d6281",
+                    "on-tertiary-fixed": "#211b11",
+                    "surface-container-highest": "#c5e8f5",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#e2f7ff",
+                    "outline": "#72777e",
+                    "secondary-container": "#bee1fd",
+                    "surface": "#f1fbff",
+                    "on-primary-fixed": "#001d32",
+                    "surface-dim": "#bde0ec",
+                    "inverse-surface": "#11353e",
+                    "surface-container-high": "#cbeefa",
+                    "inverse-on-surface": "#daf5ff",
+                    "surface-variant": "#c5e8f5",
+                    "surface-tint": "#3d6281",
+                    "on-surface": "#001f27",
+                    "on-background": "#001f27",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#406279",
+                    "primary-container": "#a1c6ea",
+                    "tertiary-container": "#cdc0b1",
+                    "surface-container": "#d2f3ff",
+                    "on-secondary-container": "#43657c",
+                    "primary-fixed": "#cde5ff",
+                    "background": "#f1fbff",
+                    "on-tertiary-container": "#574e42",
+                    "on-primary-container": "#2d5372",
+                    "tertiary-fixed-dim": "#d2c4b5",
+                    "secondary-fixed": "#c8e6ff",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#a8cbe6",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed-dim": "#a5caef",
+                    "on-surface-variant": "#42474d",
+                    "outline-variant": "#c2c7ce"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ethereal-glow {
+            background: radial-gradient(circle at top right, rgba(161, 198, 234, 0.2) 0%, rgba(241, 251, 255, 0) 60%);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #a1c6ea 0%, #3d6281 100%);
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Noto Serif', serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-sky-50/70 dark:bg-slate-950/70 backdrop-blur-xl shadow-sm shadow-sky-100/20">
+<div class="flex justify-between items-center px-12 py-6 max-w-7xl mx-auto">
+<a class="text-2xl font-serif italic text-sky-800 dark:text-sky-200" href="#">Himmel's Legacy</a>
+<div class="hidden md:flex items-center gap-8 font-serif font-medium tracking-wide">
+<a class="text-sky-600 dark:text-sky-400 hover:text-sky-800 dark:hover:text-sky-100 transition-colors duration-300" href="#about">About</a>
+<a class="text-sky-600 dark:text-sky-400 hover:text-sky-800 dark:hover:text-sky-100 transition-colors duration-300" href="#education">Education</a>
+<a class="text-sky-600 dark:text-sky-400 hover:text-sky-800 dark:hover:text-sky-100 transition-colors duration-300" href="#artifacts">Projects</a>
+<a class="text-sky-600 dark:text-sky-400 hover:text-sky-800 dark:hover:text-sky-100 transition-colors duration-300" href="#pastimes">Pastimes</a>
+</div>
+<div class="hidden md:flex items-center gap-4 mr-4 text-sky-600 dark:text-sky-400">
+<a class="hover:text-primary transition-colors duration-300 flex items-center justify-center" href="https://github.com/aucs0n" target="_blank" title="GitHub">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</a>
+<a class="hover:text-primary transition-colors duration-300 flex items-center justify-center" href="https://www.youtube.com/@aucs0n" target="_blank" title="YouTube">
+<span class="material-symbols-outlined text-[28px]">play_circle</span>
+</a>
+</div>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-serif font-medium hover:scale-105 transition-transform ease-in-out block" href="mailto:ghemearson.nacua@gmail.com">Contact</a>
+</div>
+</nav>
+<main class="ethereal-glow pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center justify-center px-6 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Dreamy alpine landscape with soft blue mountains under a bright morning sky" class="w-full h-full object-cover opacity-20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA801V6qRTpFDkO9SNwFT2WzPPR8jGdjZcA8XUKGkdcqWyhVl2s7t3Hb4STY0QiZEoMQ0zEFWNFNxAYpNNMikibHyyCc6IUgp1uTG8j4HAi3gGRE3mmJ4nAsIU6Hmb3BvRpk1NMOQf4EO6AfzmkSBOMVIC14SA3XPe4vRQ4IBhMIzuosVYJ_jUesRF5EEvWgi_d0xyuyQ-LMLvcSKNOPVDOqxyaqyMP2XdQaiQ1uwcNtCVHMyvdMPUGSIcLmdAPDVVkgqfnPAEARi0-"/>
+</div>
+<div class="max-w-4xl text-center z-10 space-y-8">
+<div class="flex justify-center mb-4">
+<span class="material-symbols-outlined text-6xl text-primary opacity-60">shrine</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-bold text-on-surface leading-tight">
+                Ghemerson John Nacua: <br/>
+<span class="text-primary italic">A Hero's Journey Through Code.</span>
+</h1>
+<p class="text-xl text-secondary max-w-2xl mx-auto font-light leading-relaxed">
+                A third-year Computer Engineering student dedicated to the selfless pursuit of excellence, crafting digital legacies with the heart of a hero.
+            </p>
+<div class="pt-4">
+<a class="hero-gradient text-on-primary px-10 py-4 rounded-lg text-lg font-medium shadow-lg hover:shadow-primary/20 transition-all inline-block" href="#about">
+                    Begin the Chronicle
+                </a>
+</div>
+</div>
+</section>
+<!-- The Hero's Tale (About Me) -->
+<section class="py-32 px-6 max-w-6xl mx-auto" id="about">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Portrait of Himmel style character" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uiXJE--HXz9t1xbkM9QDZ3-o0xmntinVoMNfTPFnHbUZFxZOU0DuFjTRuX_0IMm0Ym7-y3uWYq8voAmxJX2qwW9cvBZR9mqEbApH4D5Es6m1twxKhaQw1gXndPZJaM9xynPwr-9Ike2tz05o7wC4JmWVtccC6QpHDuhx1vdhvnazr1RdSVGtcooHqh5Q2VWDkYhPqwu-KKNfXtZCuEMffMK18jg5T4qKGrjMi9ArB-x0Rz7vwj88TIezgiOnu5csuKz5n2XGPRigFo"/>
+</div>
+<div class="absolute -bottom-8 -right-8 bg-tertiary-fixed p-8 rounded-xl shadow-xl max-w-xs">
+<p class="font-serif italic text-on-tertiary-fixed-variant leading-relaxed">
+                        "It is not the length of the journey that matters, but the lives we touch along the path."
+                    </p>
+</div>
+</div>
+<div class="space-y-8">
+<div class="flex items-center gap-4">
+<span class="h-[2px] w-12 bg-primary-container"></span>
+<h2 class="text-4xl font-bold">The Hero's Tale</h2>
+</div>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+<p>
+                        Like the legendary Himmel, Ghemerson John Nacua believes that leadership is a quiet, steadfast commitment to the well-being of others. As a third-year Computer Engineering student, he approaches every project not just as a task, but as a quest to solve meaningful problems.
+                    </p>
+<p>
+                        Proactive, versatile, and an aspiring leader, Ghemerson thrives in the intersection of complex hardware and elegant software. He doesn't just build systems; he builds the future with a sense of selfless heroism and a meticulous eye for detail.
+                    </p>
+</div>
+<div class="flex gap-4">
+<div class="bg-surface-container-low px-6 py-4 rounded-lg border border-outline-variant/10">
+<span class="block text-2xl font-bold text-primary italic">Proactive</span>
+<span class="text-sm text-secondary uppercase tracking-widest">Alignment</span>
+</div>
+<div class="bg-surface-container-low px-6 py-4 rounded-lg border border-outline-variant/10">
+<span class="block text-2xl font-bold text-primary italic">Versatile</span>
+<span class="text-sm text-secondary uppercase tracking-widest">Class</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Current Quest -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-surface-container-lowest rounded-xl p-12 shadow-sm border border-outline-variant/10 flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/3">
+<div class="w-24 h-24 bg-primary-container/20 rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-5xl text-primary" data-weight="fill">shield_person</span>
+</div>
+<h2 class="text-3xl font-bold mb-4">Current Quest</h2>
+<div class="inline-flex items-center gap-2 bg-tertiary-fixed px-3 py-1 rounded-full text-xs font-bold uppercase tracking-tighter text-on-tertiary-fixed-variant">
+                        Active Mission
+                    </div>
+</div>
+<div class="md:w-2/3">
+<h3 class="text-4xl font-serif italic text-primary mb-6">Exploring Cloud Security</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                        The frontier of the digital age is fraught with unseen dangers. Ghemerson is currently venturing into the realm of Cloud Security, mastering the arts of data fortification and architectural integrity. This heroic path focuses on protecting the legacies of tomorrow from the shadows of the present.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Path of Enlightenment (Education Timeline) -->
+<section class="py-32 px-6 max-w-7xl mx-auto" id="education">
+<div class="text-center mb-20">
+<h2 class="text-4xl md:text-5xl font-bold mb-4 text-primary font-serif italic">Path of Enlightenment</h2>
+<div class="flex justify-center">
+<span class="material-symbols-outlined text-primary-container text-4xl">auto_stories</span>
+</div>
+</div>
+<div class="relative">
+<!-- Center Line -->
+<div class="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-primary-container/40"></div>
+<div class="space-y-24">
+<!-- University of San Carlos -->
+<div class="relative flex items-center justify-center w-full">
+<div class="absolute left-1/2 -translate-x-1/2 w-12 h-12 bg-white border-2 border-primary rounded-full flex items-center justify-center z-10 shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl">school</span>
+</div>
+<div class="grid grid-cols-2 w-full">
+<div class="col-start-2 pl-16">
+<div class="bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-primary-container/20 shadow-sm hover:shadow-md transition-shadow group max-w-md">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-xl font-bold text-primary leading-tight font-serif italic">Bachelor of Science in Computer Engineering</h3>
+<span class="text-xs font-bold text-secondary/60 italic font-serif">2021 — Present</span>
+</div>
+<p class="text-on-surface-variant font-medium">University of San Carlos</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Senior High School -->
+<div class="relative flex items-center justify-center w-full">
+<div class="absolute left-1/2 -translate-x-1/2 w-12 h-12 bg-white border-2 border-primary-container rounded-full flex items-center justify-center z-10 shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-xl">verified</span>
+</div>
+<div class="grid grid-cols-2 w-full">
+<div class="col-start-1 pr-16 text-right flex justify-end">
+<div class="bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-primary-container/20 shadow-sm hover:shadow-md transition-shadow group max-w-md w-full">
+<div class="flex justify-between items-start mb-4 flex-row-reverse">
+<h3 class="text-xl font-bold text-primary leading-tight font-serif italic text-right">Senior High School (STEM)</h3>
+<span class="text-xs font-bold text-secondary/60 italic font-serif">2016 — 2023</span>
+</div>
+<p class="text-on-surface-variant font-medium">University of San Carlos</p>
+<p class="text-xs text-primary/70 mt-2 font-serif">☆ Graduated with Honors</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Junior High School -->
+<div class="relative flex items-center justify-center w-full">
+<div class="absolute left-1/2 -translate-x-1/2 w-12 h-12 bg-white border-2 border-primary-container rounded-full flex items-center justify-center z-10 shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-xl">history_edu</span>
+</div>
+<div class="grid grid-cols-2 w-full">
+<div class="col-start-2 pl-16">
+<div class="bg-white/80 backdrop-blur-sm p-8 rounded-2xl border border-primary-container/20 shadow-sm hover:shadow-md transition-shadow group max-w-md">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-xl font-bold text-primary leading-tight font-serif italic">Junior High School</h3>
+</div>
+<p class="text-on-surface-variant font-medium">San Roque College de Cebu (Main Campus)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects (formerly Heroic Artifacts & Skills) -->
+<section class="py-32 px-6 max-w-7xl mx-auto bg-surface-container-low rounded-[2rem]" id="artifacts">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="text-4xl font-bold mb-6 italic font-serif">Heroic Projects</h2>
+<p class="text-on-surface-variant text-lg">Every hero carries tools forged in the fires of discipline. These are the key projects Ghemerson wields to shape the digital world.</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary text-4xl opacity-40">token</span>
+<span class="material-symbols-outlined text-primary text-4xl opacity-60">deployed_code</span>
+<span class="material-symbols-outlined text-primary text-4xl opacity-40">memory</span>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Project/Leadership Card -->
+<div class="col-span-1 md:col-span-2 bg-surface-container-lowest p-10 rounded-xl shadow-sm border border-outline-variant/10 flex flex-col md:flex-row gap-8">
+<div class="md:w-1/2 space-y-6">
+<div class="inline-flex items-center gap-2 text-primary font-bold tracking-tighter uppercase text-xs">
+<span class="material-symbols-outlined text-base">verified</span>
+                        Core Leadership
+                    </div>
+<h3 class="text-3xl font-bold">USC Computer Engineering Council</h3>
+<p class="text-on-surface-variant leading-relaxed">Leading the next generation of engineers through selfless mentorship, organizing heroic-scale technical events, and fostering a community of innovation and collaboration.</p>
+<div class="flex flex-wrap gap-2">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Strategic Planning</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Community Building</span>
+</div>
+</div>
+<div class="md:w-1/2 rounded-lg overflow-hidden">
+<img alt="Council Logo/Activity" class="w-full h-full object-contain p-8 bg-white" src="https://lh3.googleusercontent.com/aida/ADBb0ujIDaU7zGnTW0C2u3Z83MzvsOsQdizeyL56zfDN10Hl8JKnwhxSHwOot5yUnVkK0tGQqrVc7FVhVeCBZ3Qn454tj9GR_Si1voLNgcbdeUG4Z9z9thLf6ec0k_Fqrvgv4vN9kzFOrgAouYPeg4gR_O8RIhcKVJACtcU4lZBZqEoZh9c2lW9RKYPcWKJ4aD8ILRU_Ii1UjRpG6RFwGLHXpIGk8j3unrm48WH-2_8DwXlPlLAShcHyzW1NPHmkCT8XFg2BTHsa1fgfdnc"/>
+</div>
+</div>
+<!-- Skills Bento Card -->
+<div class="bg-primary text-on-primary p-10 rounded-xl shadow-lg flex flex-col justify-between">
+<div>
+<h3 class="text-2xl font-bold mb-8">Technical Masteries</h3>
+<ul class="space-y-6 font-serif italic text-lg">
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined">terminal</span>
+                            Python &amp; Java
+                        </li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined">data_object</span>
+                            C / C++
+                        </li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined">location_chip</span>
+                            Hardware Design
+                        </li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined">layers</span>
+                            System Architecture
+                        </li>
+</ul>
+</div>
+<div class="mt-8 pt-8 border-t border-on-primary/10">
+<p class="text-sm opacity-80 uppercase tracking-widest font-sans">Leveling Up</p>
+<p class="font-bold">Advanced Algorithms</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Hero's Pastimes (Hobbies) -->
+<section class="py-32 px-6 max-w-7xl mx-auto" id="pastimes">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-2">Hero's Pastimes</h2>
+<p class="text-secondary italic font-serif">A respite from the journey, where legends unwind.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+<!-- Genshin -->
+<div class="flex flex-col gap-4 group">
+<div class="relative aspect-square rounded-xl overflow-hidden shadow-sm">
+<img alt="Genshin Impact" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uhUcZ6rbYitw_9QIY8VmbUEBtrqgQsly2pALvBK0OBlvvPSAV8sGz0bs3fze15koV94YTJ57f7wSdeFovnol-roGDZ-8yYPm9dft_rt-GitupuuChxaEA2RGLWbypayRqwaGWVewPq5NsHe9Yq2CbYcSzBZx6vmNQHpBFRNL73x5Gb7hcvplaUVrZKXUUhfDliu4C7gxqIk5xNqwv85ujukLTPPTK8HddfVPWPbu02BLvzdUjaeuYhBvM-kc4YqhGfv_IlexI-fmgQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+<p class="text-on-primary/80 text-xs uppercase tracking-widest">Exploration</p>
+</div>
+</div>
+<p class="text-center font-serif text-lg text-secondary">Genshin Impact</p>
+</div>
+<!-- osu! -->
+<div class="flex flex-col gap-4 group">
+<div class="relative aspect-square rounded-xl overflow-hidden shadow-sm">
+<img alt="osu!" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uhtrbTjWBUL3b-yjDcshKG_VLOvR8B-CR1P1mBL8-z3Fmscctop8apPpKjs5EppF1nMxG1JgIIN_B30LXkEStRw7URLCaEptcYg_77r7M-FXpe6vOXQlX2hhFWWlGcl6XGnorVq49FLtYqNmEcCaKp60VHlpSBf5SjGRhwVwBCn-lWBLpbm9WZAO4Q1Ny4AFGdTXyoLUEj2Tx84szmEx02a8lI2uR37dBQ16Ykfa4NocXiXv8LxhDmilgAg6lG4E70E7mPEaNDOO4E"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+<p class="text-on-primary/80 text-xs uppercase tracking-widest">Precision</p>
+</div>
+</div>
+<p class="text-center font-serif text-lg text-secondary">osu!</p>
+</div>
+<!-- Cloud Security -->
+<div class="flex flex-col gap-4 group">
+<div class="relative aspect-square rounded-xl overflow-hidden shadow-sm">
+<img alt="Cloud Security" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uiO_7SKchzgHA_kDHDTJNRnFane4Inw9J6pVcnw7-L3QWHTXkx1tbjtM4HB2CzQ4G-xK3MKsuVYuZM6XlWiUZ1SZ81kYTc-APGx3Krzt8_5BwbxhXslTZZQt4DGgfewwZ24bz0rdp3BHU-eIYVzDMXQZ3edEHUmGi3A6J9MIX3yWoUVlnL6Tx424KWG9eJ-1RgrHqQmWbjBGb6xVE6RXWjx8TaMYTTXouSudGXtl9Vq-2RDPOy-IvSg-RK3iYU_KDcZ5nCaIJgWeeg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+<p class="text-on-primary/80 text-xs uppercase tracking-widest">Strategy</p>
+</div>
+</div>
+<p class="text-center font-serif text-lg text-secondary">Cloud Security</p>
+</div>
+<!-- Workout -->
+<div class="flex flex-col gap-4 group">
+<div class="relative aspect-square rounded-xl overflow-hidden shadow-sm">
+<img alt="Workout" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida/ADBb0uhdZUq2Wm48KnFmBJZB0jq1lwhiz-q4BaKEP8Ixhd_yNP41T_UyihbL_P7z0MFjc_i5HqIFO_5PXeq9wDeaxhjDcfS4qrFtXjBNMdfE_y7LWhlLZbVVGChQaM00xjwdSYiV7P9J39wD7jrTv3OGhPifUwMXnMw5whWbdRS_QzFmKazh7GLcDRoAFh9FbGDOLCT57PAsZua4XnSuSnKNf--EWo6B8Zra-le4MjzHytVX4f-iQ-E9jj8RZu3dzS5L2_Kzuntlk21kRw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6">
+<p class="text-on-primary/80 text-xs uppercase tracking-widest">Growth</p>
+</div>
+</div>
+<p class="text-center font-serif text-lg text-secondary">Workout</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 border-t border-sky-100 dark:border-sky-900/30 bg-slate-50 dark:bg-slate-900 flex flex-col items-center gap-6 px-4 text-center">
+<div class="text-lg font-serif text-sky-700">Himmel's Legacy</div>
+<div class="flex gap-8 font-serif text-sm italic">
+<a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-300 transition-opacity" href="#">The Hero's Code</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-300 transition-opacity" href="#">Chronicles</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-300 transition-opacity" href="#">Legacy Map</a>
+</div>
+<div class="flex gap-6 mt-2">
+<a class="text-slate-500 hover:text-primary transition-colors flex items-center gap-2 font-serif italic text-sm" href="https://github.com/aucs0n" target="_blank">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg> 
+            GitHub
+        </a>
+<a class="text-slate-500 hover:text-primary transition-colors flex items-center gap-2 font-serif italic text-sm" href="https://www.youtube.com/@aucs0n" target="_blank">
+<span class="material-symbols-outlined text-xl">play_circle</span> 
+            YouTube
+        </a>
+</div>
+<div class="w-12 h-[1px] bg-sky-200"></div>
+<p class="font-serif text-sm italic text-sky-800 dark:text-sky-200">
+        Dedicated to the Era of the Hero. May your journey never be forgotten.
+    </p>
+<p class="text-[10px] uppercase tracking-widest text-slate-400 mt-4">
+        © 2024 Ghemerson John Nacua. Crafted with honor.
+    </p>
+</footer>
+</body></html>
