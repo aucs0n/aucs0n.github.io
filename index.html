@@ -275,7 +275,7 @@
 <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
 <div class="max-w-2xl">
 <h2 class="text-4xl font-bold mb-6 italic font-serif">Security Quests</h2>
-<p class="text-on-surface-variant text-lg">Three semesters of Information Engineering, from the foundations of cryptography to protecting live networks with machine learning and formally proving (and breaking) authentication protocols.</p>
+<p class="text-on-surface-variant text-lg">Information Engineering is one connected journey, each course building on the last. It starts with cryptography and securing a server–client app, moves on to attacking and defending real software-defined networks, and ends with the final course: an AI system that stops attacks on its own, and a formal proof that finds the flaw in an authentication protocol.</p>
 </div>
 <div class="flex gap-4">
 <span class="material-symbols-outlined text-primary text-4xl opacity-40">key</span>
@@ -284,59 +284,56 @@
 </div>
 </div>
 <div class="space-y-16">
-<!-- InfoEng 3 -->
+<!-- InfoEng 1 -->
 <div>
 <div class="flex items-center gap-4 mb-8">
-<span class="h-[2px] w-12 bg-primary-container"></span>
-<h3 class="text-2xl font-bold font-serif italic text-primary">Information Engineering 3 <span class="text-base not-italic font-sans font-medium text-secondary/70">· CPE 3353 · 2026</span></h3>
+<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-on-primary font-bold shrink-0">1</span>
+<h3 class="text-2xl font-bold font-serif italic text-primary">Information Engineering 1 <span class="block md:inline text-xs uppercase tracking-widest not-italic font-sans font-bold text-secondary/70 md:ml-2">Step 1 · The Foundation</span> <span class="text-base not-italic font-sans font-medium text-secondary/70">· CPE 3151 · Sep — Dec 2025</span></h3>
 </div>
 <div class="grid md:grid-cols-2 gap-8">
 <article class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10 flex flex-col gap-4">
 <div class="inline-flex items-center gap-2 text-primary font-bold tracking-tighter uppercase text-xs">
-<span class="material-symbols-outlined text-base">smart_toy</span>
-                        AI Security Automation · Team Project
+<span class="material-symbols-outlined text-base">lock</span>
+                        Applied Cryptography
                     </div>
-<h4 class="text-2xl font-bold">Intelligent Security Management using SDN</h4>
+<h4 class="text-2xl font-bold">CIA: Secure Server–Client Code</h4>
 <ul class="list-disc pl-5 space-y-2 text-on-surface-variant leading-relaxed">
-<li>Built a closed-loop system that detects and blocks denial-of-service floods on a physical SDN: a Raspberry Pi 3 running Open vSwitch, controlled by Floodlight over a separate out-of-band management link.</li>
-<li>Mirrored traffic to a Scapy packet sniffer that turns each 3-second window into a 6-feature vector (packet rate, byte rate, ICMP/TCP/UDP/ARP ratios) for a linear SVM classifier.</li>
-<li>When an attacker is flagged, the AI agent calls Floodlight's REST API to push per-IP drop rules, re-applies them if they are cleared mid-attack, and handles multiple simultaneous attackers.</li>
-<li>Tested against ICMP ping floods, TCP SYN floods, zero-payload UDP floods, ARP storms and giant-payload floods, with attacker roles rotated across hosts.</li>
+<li>Developed a multi-threaded Python application enabling simultaneous two-way messaging between clients and a central server.</li>
+<li>Implemented an end-to-end security layer using RSA for encryption, and used the <code>cryptography</code> package for digital signatures and verification, ensuring data integrity and confidentiality.</li>
 </ul>
 <div class="flex flex-wrap gap-2 mt-auto pt-2">
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">SDN</span>
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Floodlight</span>
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Open vSwitch</span>
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Python · Scapy</span>
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">SVM</span>
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Postman</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Python</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Sockets</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Threading</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">RSA</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Digital Signatures</span>
 </div>
 </article>
 <article class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10 flex flex-col gap-4">
 <div class="inline-flex items-center gap-2 text-primary font-bold tracking-tighter uppercase text-xs">
-<span class="material-symbols-outlined text-base">fact_check</span>
-                        Formal Verification · Team Project
+<span class="material-symbols-outlined text-base">menu_book</span>
+                        Cryptography Foundations
                     </div>
-<h4 class="text-2xl font-bold">Verifying a Three-Party Authentication Protocol</h4>
+<h4 class="text-2xl font-bold">Cryptography Labs</h4>
 <ul class="list-disc pl-5 space-y-2 text-on-surface-variant leading-relaxed">
-<li>Modeled a sensor node / mobile node / server protocol (password-keyed hashes, elliptic-curve Diffie–Hellman shares, digital signatures) in Scyther's SPDL language.</li>
-<li>Verified 25 security claims against a Dolev–Yao attacker: the sensor node and server passed every claim, but the mobile node failed 8 of its 9.</li>
-<li>Traced the flaw through Scyther's attack graphs: the sensor node is never authenticated to the mobile node, so an intruder can swap in its own key share and control both session keys.</li>
+<li>Broke a reused-key stream cipher with a crib-drag attack.</li>
+<li>Covered symmetric and public-key cryptography, hash functions and message authentication, digital signatures, and authentication protocols in mobile networks.</li>
+<li>Designed a client–server security diagram before adding security to the course's server–client application.</li>
 </ul>
 <div class="flex flex-wrap gap-2 mt-auto pt-2">
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Scyther</span>
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">SPDL</span>
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">ECDH</span>
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Protocol Analysis</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Crib-Drag</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Hashing &amp; MACs</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">PKI</span>
 </div>
 </article>
 </div>
 </div>
+<div class="flex justify-center -my-6" aria-hidden="true"><span class="material-symbols-outlined text-primary-container text-4xl">south</span></div>
 <!-- InfoEng 2 -->
 <div>
 <div class="flex items-center gap-4 mb-8">
-<span class="h-[2px] w-12 bg-primary-container"></span>
-<h3 class="text-2xl font-bold font-serif italic text-primary">Information Engineering 2 <span class="text-base not-italic font-sans font-medium text-secondary/70">· CPE 3252 · Jan — May 2026</span></h3>
+<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-on-primary font-bold shrink-0">2</span>
+<h3 class="text-2xl font-bold font-serif italic text-primary">Information Engineering 2 <span class="block md:inline text-xs uppercase tracking-widest not-italic font-sans font-bold text-secondary/70 md:ml-2">Step 2 · Attack &amp; Defend the Network</span> <span class="text-base not-italic font-sans font-medium text-secondary/70">· CPE 3252 · Jan — May 2026</span></h3>
 </div>
 <div class="grid md:grid-cols-2 gap-8">
 <article class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10 flex flex-col gap-4">
@@ -395,46 +392,51 @@
 </article>
 </div>
 </div>
-<!-- InfoEng 1 -->
+<div class="flex justify-center -my-6" aria-hidden="true"><span class="material-symbols-outlined text-primary-container text-4xl">south</span></div>
+<!-- InfoEng 3 -->
 <div>
 <div class="flex items-center gap-4 mb-8">
-<span class="h-[2px] w-12 bg-primary-container"></span>
-<h3 class="text-2xl font-bold font-serif italic text-primary">Information Engineering 1 <span class="text-base not-italic font-sans font-medium text-secondary/70">· CPE 3151 · Sep — Dec 2025</span></h3>
+<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary text-on-primary font-bold shrink-0">3</span>
+<h3 class="text-2xl font-bold font-serif italic text-primary">Information Engineering 3 <span class="block md:inline text-xs uppercase tracking-widest not-italic font-sans font-bold text-secondary/70 md:ml-2">Final · Putting It All Together</span> <span class="text-base not-italic font-sans font-medium text-secondary/70">· CPE 3353 · 2026</span></h3>
 </div>
 <div class="grid md:grid-cols-2 gap-8">
 <article class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10 flex flex-col gap-4">
 <div class="inline-flex items-center gap-2 text-primary font-bold tracking-tighter uppercase text-xs">
-<span class="material-symbols-outlined text-base">lock</span>
-                        Applied Cryptography
+<span class="material-symbols-outlined text-base">smart_toy</span>
+                        AI Security Automation · Team Project
                     </div>
-<h4 class="text-2xl font-bold">CIA: Secure Server–Client Code</h4>
+<h4 class="text-2xl font-bold">Intelligent Security Management using SDN</h4>
 <ul class="list-disc pl-5 space-y-2 text-on-surface-variant leading-relaxed">
-<li>Developed a multi-threaded Python application enabling simultaneous two-way messaging between clients and a central server.</li>
-<li>Implemented an end-to-end security layer using RSA for encryption, and used the <code>cryptography</code> package for digital signatures and verification, ensuring data integrity and confidentiality.</li>
+<li>Built a closed-loop system that detects and blocks denial-of-service floods on a physical SDN: a Raspberry Pi 3 running Open vSwitch, controlled by Floodlight over a separate out-of-band management link.</li>
+<li>Mirrored traffic to a Scapy packet sniffer that turns each 3-second window into a 6-feature vector (packet rate, byte rate, ICMP/TCP/UDP/ARP ratios) for a linear SVM classifier.</li>
+<li>When an attacker is flagged, the AI agent calls Floodlight's REST API to push per-IP drop rules, re-applies them if they are cleared mid-attack, and handles multiple simultaneous attackers.</li>
+<li>Tested against ICMP ping floods, TCP SYN floods, zero-payload UDP floods, ARP storms and giant-payload floods, with attacker roles rotated across hosts.</li>
 </ul>
 <div class="flex flex-wrap gap-2 mt-auto pt-2">
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Python</span>
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Sockets</span>
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Threading</span>
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">RSA</span>
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Digital Signatures</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">SDN</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Floodlight</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Open vSwitch</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Python · Scapy</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">SVM</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Postman</span>
 </div>
 </article>
 <article class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10 flex flex-col gap-4">
 <div class="inline-flex items-center gap-2 text-primary font-bold tracking-tighter uppercase text-xs">
-<span class="material-symbols-outlined text-base">menu_book</span>
-                        Cryptography Foundations
+<span class="material-symbols-outlined text-base">fact_check</span>
+                        Formal Verification · Team Project
                     </div>
-<h4 class="text-2xl font-bold">Cryptography Labs</h4>
+<h4 class="text-2xl font-bold">Verifying a Three-Party Authentication Protocol</h4>
 <ul class="list-disc pl-5 space-y-2 text-on-surface-variant leading-relaxed">
-<li>Broke a reused-key stream cipher with a crib-drag attack.</li>
-<li>Covered symmetric and public-key cryptography, hash functions and message authentication, digital signatures, and authentication protocols in mobile networks.</li>
-<li>Designed a client–server security diagram before adding security to the course's server–client application.</li>
+<li>Modeled a sensor node / mobile node / server protocol (password-keyed hashes, elliptic-curve Diffie–Hellman shares, digital signatures) in Scyther's SPDL language.</li>
+<li>Verified 25 security claims against a Dolev–Yao attacker: the sensor node and server passed every claim, but the mobile node failed 8 of its 9.</li>
+<li>Traced the flaw through Scyther's attack graphs: the sensor node is never authenticated to the mobile node, so an intruder can swap in its own key share and control both session keys.</li>
 </ul>
 <div class="flex flex-wrap gap-2 mt-auto pt-2">
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Crib-Drag</span>
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Hashing &amp; MACs</span>
-<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">PKI</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Scyther</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">SPDL</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">ECDH</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 rounded-full text-xs font-bold uppercase">Protocol Analysis</span>
 </div>
 </article>
 </div>
